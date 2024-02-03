@@ -16,13 +16,19 @@ module.exports = {
         use: {
           loader: 'url-loader',
           options: {
-            name: '[name].[ext]'
+            name: 'images/[hash]-[name].[ext]'
           }
         }
       },
       {
-        test: /\.(jpe?g|png)$/i,
-        type: "asset",
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 8000, // Convert images < 8kb to base64 strings
+            name: 'images/[hash]-[name].[ext]'
+          },
+        },
       },
     ]
   },

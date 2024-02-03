@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cheeky chops is a fun place where the children can come for there hair cutting">
-    <meta name="author" content="Cheeky Chops">
+    <meta name="description" content="Cheeky chops in Meanwood, Leeds is a fun place where your child / children can come for their hair cutting">
+    <meta name="author" content="Cheeky Chops Haircutting Meanwood Leeds">
     <meta name="theme-color" content="#262626"/>
     <meta name="msapplication-navbutton-color" content="#262626"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-    <title>Cheeky Chops - a fun place where the children can come for there hair cutting!</title>
+    <title>Cheeky Chops - a fun place where the children can come for their hair cutting!</title>
     <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
       <div class="header-content">
         <div class="header-content-inner">
           <h1><span class="sr-only">Cheeky Chops!</span></h1>
-          <p class="cloud">Perfect for children who don't like there hair cutting</p>
+          <p class="cloud">Perfect for children who don't like their hair cutting</p>
           <div id="monkey"></div>
         </div>
       </div>
@@ -58,8 +58,8 @@
       <div id="about" class="container">
         <div class="container-header">
           <h2 id="about-title">About us</h2>
-          <p>Cheeky chops is a fun place where the children can come for there hair cutting with out it been such a task for the parents we have cars they sit in to have there hair cut, fun feature walls , Ipads and so much more!</p>
-          <p>Bring your children for there hair cutting with a more fun and relaxing experience than the normal salons, perfect for children who are not very keep on there haircutting.</p> 
+          <p>Cheeky chops is a fun place where the children can come for their hair cutting with out it been such a task for the parents we have cars they sit in to have there hair cut, fun feature walls , Ipads and so much more!</p>
+          <p>Bring your children for their hair cutting with a more fun and relaxing experience than the normal salons, perfect for children who are not very keep on their haircutting.</p> 
           <p>For children children who need extra time and care please book the service called haircut with extra time!</p>
           <p>We also offer ladies hair and beauty services which allows you to bring your child with you.</p>
         </div>
@@ -67,15 +67,21 @@
 
       <div id="gallery" class="container">
         <div class="container-header">
-          <h2 id="gallery" class="sr-only">Gallery</h2>
-          <div class="gallery">
-            <img src="<%= require('./img/img1.jpg') %>" alt="image text">
-            <img src="<%= require('./img/img2.jpg') %>" alt="image text">
-            <img src="<%= require('./img/img3.jpg') %>" alt="image text">
-            <img src="<%= require('./img/img4.jpg') %>" alt="image text">
-            <img src="<%= require('./img/img5.jpg') %>" alt="image text">
-            <img src="<%= require('./img/img6.jpg') %>" alt="image text">
+          <h2 id="gallery-title"><span class="title-part-a">Making</span> <span class="title-part-b">haircuts</span> <span class="title-part-c">more</span> <span class="title-part-d">fun</span> <span class="title-part-e">and</span> <span class="title-part-f">relaxing</span></h2>
+          <div class="gallery-wrap">
+            <div class="gallery">
+              <img class="gallery-image" src="<%= require.ensure('./img/img1.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img2.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img3.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img4.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img5.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img6.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img7.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img8.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img9.jpg').default %>" alt="picture of child having hair cut">
+            </div>
           </div>
+          <div class="swipe-icon"></div>
         </div>
       </div>
 
