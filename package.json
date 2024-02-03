@@ -1,0 +1,52 @@
+{
+  "name": "site-cheeky-chops",
+  "version": "1.0.0",
+  "description": "public website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack serve --config webpack.dev.js --progress",
+    "serve": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@squoosh/lib": "^0.5.3",
+    "body-parser": "1.19.0",
+    "css-loader": "6.2.0",
+    "css-minimizer-webpack-plugin": "3.0.2",
+    "errorhandler": "1.5.1",
+    "express": "4.17.1",
+    "file-loader": "6.2.0",
+    "html-inline-css-webpack-plugin": "1.11.1",
+    "html-webpack-inline-source-plugin": "1.0.0-beta.2",
+    "html-webpack-plugin": "5.3.2",
+    "inline-chunk-html-plugin": "1.1.1",
+    "method-override": "3.0.0",
+    "mini-css-extract-plugin": "2.7.6",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss": "8.3.6",
+    "postcss-assets-webpack-plugin": "4.1.2",
+    "postcss-cssnext": "3.1.0",
+    "postcss-import": "14.0.2",
+    "postcss-inline-svg": "5.0.0",
+    "postcss-loader": "6.1.1",
+    "postcss-nested": "5.0.6",
+    "remove-files-webpack-plugin": "1.4.5",
+    "style-loader": "3.2.1",
+    "svg-inline-loader": "0.8.2",
+    "terser-webpack-plugin": "5.1.4",
+    "url-loader": "4.1.1",
+    "webpack": "5.73.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack-merge": "5.8.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}

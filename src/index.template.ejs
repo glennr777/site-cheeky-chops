@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head data-tid="<%= new Date().valueOf() %>">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cheeky chops is a fun place where the children can come for there hair cutting">
+    <meta name="author" content="Cheeky Chops">
+    <meta name="theme-color" content="#262626"/>
+    <meta name="msapplication-navbutton-color" content="#262626"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <title>Cheeky Chops - a fun place where the children can come for there hair cutting!</title>
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<%= require('./img/apple-touch-icon.png').default %>" sizes="180x180">
+    <link rel="icon" href="<%= require('./img/favicon-16x16.png').default %>" sizes="16x16">
+    <link rel="icon" href="<%= require('./img/favicon-32x32.png').default %>" sizes="32x32">
+    <link rel="shortcut icon" href="<%= require('./img/favicon.ico').default %>">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+
+  <body>
+    <div class="gradient"></div>
+    <nav id="mainNav">
+        <a class="page-scroll booksy" href="http://cheekychops.booksy.com" target="_blank" name="logo">Book Now</a>
+        <button id="navButton" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+        </button>
+        <div id="navBar">
+          <ul>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#opening">Opening Times</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <header id="page-top">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1><span class="sr-only">Cheeky Chops!</span></h1>
+          <p class="cloud">Perfect for children who don't like there hair cutting</p>
+          <div id="monkey"></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="main-content">
+      <div id="about" class="container">
+        <div class="container-header">
+          <h2 id="about-title">About us</h2>
+          <p>Cheeky chops is a fun place where the children can come for there hair cutting with out it been such a task for the parents we have cars they sit in to have there hair cut, fun feature walls , Ipads and so much more!</p>
+          <p>Bring your children for there hair cutting with a more fun and relaxing experience than the normal salons, perfect for children who are not very keep on there haircutting.</p> 
+          <p>For children children who need extra time and care please book the service called haircut with extra time!</p>
+          <p>We also offer ladies hair and beauty services which allows you to bring your child with you.</p>
+        </div>
+      </div>
+
+      <div id="gallery" class="container">
+        <div class="container-header">
+          <h2 id="gallery" class="sr-only">Gallery</h2>
+          <div class="gallery">
+            <img src="<%= require('./img/img1.jpg') %>" alt="image text">
+            <img src="<%= require('./img/img2.jpg') %>" alt="image text">
+            <img src="<%= require('./img/img3.jpg') %>" alt="image text">
+            <img src="<%= require('./img/img4.jpg') %>" alt="image text">
+            <img src="<%= require('./img/img5.jpg') %>" alt="image text">
+            <img src="<%= require('./img/img6.jpg') %>" alt="image text">
+          </div>
+        </div>
+      </div>
+
+      <div id="opening" class="container">
+        <div class="container-header">
+          <h2 id="opening-title">Opening Times</h2>
+          <table class="opening-times" id="opening-times-table" data-today="5">
+            <thead>
+              <tr>
+                <th scope="row"><span class="sr-only">Period</span></th>
+                <th data-day="1" scope="col">Opens</th>
+                <th data-day="2" scope="col">Closes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mon</th>
+                <td data-day="1" scope="col">09:30</td>
+                <td data-day="2" scope="col">14:30</td>
+              </tr>
+              <tr>
+                <th scope="row">Tue</th>
+                <td data-day="1" scope="col">Closed</td>
+                <td data-day="2" scope="col">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Wed</th>
+                <td data-day="1" scope="col">Closed</td>
+                <td data-day="2" scope="col">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Thu</th>
+                <td data-day="1" scope="col">Closed</td>
+                <td data-day="2" scope="col">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Fri</th>
+                <td data-day="1" scope="col">10:00</td>
+                <td data-day="2" scope="col">18:30</td>
+              </tr>
+              <tr>
+                <th scope="row">Sat</th>
+                <td data-day="1" scope="col">09:00</td>
+                <td data-day="2" scope="col">16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sun</th>
+                <td data-day="1" scope="col">09:30</td>
+                <td data-day="2" scope="col">14:30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer><a href="tel:07713720971">07713&nbsp;720971</a>74 Green Rd, Meanwood, Leeds LS6 4HY</footer>
+  </body>
+</html>
