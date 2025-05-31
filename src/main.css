@@ -410,6 +410,41 @@ html {
     }
     
 
+    /* Modals */
+    & .modal {
+      position: fixed;
+      z-index: 5;
+      transform: translateZ(0);
+      top: 0;
+      pointer-events: none;
+      transition: opacity 500ms ease-in-out;
+
+      &.scrolled {
+        opacity: 0;
+      }
+
+      & .inner {
+        font-size: 0.9em;
+        padding: 1em 2em;
+        margin: 6em auto 0 auto;
+        width: fit-content;
+        text-align: center;
+        height: fit-content;
+        min-height: auto;
+        background-color: var(--clr-4);
+        color: var(--clr-10);
+        border-radius: 10px;
+        text-shadow: 0 0 5px rgb(0,0,0);
+        box-shadow: 0 5px 10px rgba(0,0,0,.25);
+
+        @media(--small-device) {
+          margin-top: 30em;
+          font-size: 0.8em;
+          width: calc(100% - 120px);
+        }
+      }
+    }
+
     /* About */
     & #main-content {
       background: var(--clr-1);
@@ -426,7 +461,7 @@ html {
       }
       #about {
         background: svg-load("img/cloud.svg", fill=var(--clr-10)) no-repeat;
-        background-size: 820px;
+        background-size: 50em;
         background-position: center calc(50% + 3em);
         color: var(--clr-4);
 

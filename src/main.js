@@ -16,6 +16,7 @@ const menuClick = (e) => {
 const updateScroll = () => {
   toggleMenu(document.body.offsetWidth > 480);
   document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 0);
+  document.getElementById('booking_notice').classList.toggle('scrolled', window.scrollY > window.innerHeight / 10);
 };
 
 const debouceScroll = () => {
