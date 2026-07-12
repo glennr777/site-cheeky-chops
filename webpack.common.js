@@ -1,8 +1,12 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { plugin } = require('postcss');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+    index: './src/main.js',
+  },
   module: {
     rules: [
       {
@@ -32,6 +36,21 @@ module.exports = {
       },
     ]
   },
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.template.ejs',
+      inject: 'html',
+      inlineSource: '.(js|css)$',
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/landing.template.ejs',
+      inject: 'html',
+      inlineSource: '.(js|css)$',
+      filename: 'landing.html',
+    }),
+  ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

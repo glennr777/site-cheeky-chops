@@ -16,15 +16,9 @@ const config =
     output: {
       clean: true,
       path: __dirname + '/dist',
+      filename: '[name].[ext]'
     },
     plugins: [
-      new MiniCssExtractPlugin(),
-      new HtmlWebpackPlugin({
-        template: './src/index.template.ejs',
-        inject: 'body',
-        filename: 'index.html',
-        scriptLoading: 'defer'
-      }),
       new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/.+[.]js/]),
       new HTMLInlineCSSWebpackPlugin(),
       new RemovePlugin({
