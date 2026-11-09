@@ -5,5 +5,7 @@ module.exports = {
     'postcss-preset-env': {
       stage: 1,
     },
+    'postcss-assets': {},
+    'cssnano': {},
   },
 };

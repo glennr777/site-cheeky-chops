@@ -16,7 +16,7 @@ const config =
     output: {
       clean: true,
       path: __dirname + '/dist',
-      filename: '[name].[ext]'
+      // filename: '[name].[ext]'
     },
     plugins: [
       new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/.+[.]js/]),
@@ -25,7 +25,7 @@ const config =
         // remove the main JS file as we're inlining
         after: {
           root: __dirname + '/dist',
-          include: ['main.js']
+          include: ['[name].js']
         }
       }),
     ],
@@ -36,6 +36,7 @@ const config =
           test: /\.js(\?.*)?$/i,
         }),
         new CssMinimizerPlugin(),
+        
       ],
     },
   });

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head data-tid="<%= new Date().valueOf() %>">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cheeky chops in Meanwood, Leeds is a fun place where your child / children can come for their hair cutting">
+    <meta name="author" content="Cheeky Chops Haircutting Meanwood Leeds">
+    <meta name="theme-color" content="#262626"/>
+    <meta name="msapplication-navbutton-color" content="#262626"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <title>Cheeky Chops - a fun place where the children can come for their hair cutting!</title>
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<%= require('./img/apple-touch-icon.png').default %>" sizes="180x180">
+    <link rel="icon" href="<%= require('./img/favicon-16x16.png').default %>" sizes="16x16">
+    <link rel="icon" href="<%= require('./img/favicon-32x32.png').default %>" sizes="32x32">
+    <link rel="shortcut icon" href="<%= require('./img/favicon.ico').default %>">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+
+  <body>
+    <nav id="mainNav">
+        <a class="page-scroll booksy" href="http://cheekychops.booksy.com" target="_blank" name="logo">Book Now</a>
+        <button id="navButton" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+        </button>
+        <div id="navBar">
+          <ul>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#opening">Opening Times</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <header id="page-top">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1 class="rosies"><span class="sr-only">Rosies hairdressing</span></h1>
+        </div>
+      </div>
+    </header>
+
+    <aside class="modal" id="booking_notice" hidden="hidden">
+      <div class="inner">
+        <h2>Booking advice</h2>
+        <p>When making a reservation, please ensure you check and set your stylist (Staff) option to "No preference" as this will help us give you all available booking times. Thanks!</p>
+      </div>
+    </aside>
+
+    <section id="main-content">
+      <div id="about" class="container">
+        <hr class="container-hr"/>
+        <div class="container-header">
+          <h2 id="about-title">About us</h2>
+          <p>At Rosie's we've created a small, relaxed salon for those who prefer a quiter, more personal experience.</p>
+          <p>Every appointment is completely one-to-one, meaning no crowded waiting areas, no constant interruptions, and no rushing from one client to the next.</p>
+          <p>Your appointment time is dedicated entirely to you, allowing us to focus on your individual needs and give your hair the attention it deserves.</p>
+        </div>
+      </div>
+
+      <div id="gallery" class="container">
+        <div class="container-header">
+          <h2 id="gallery-title">Relaxing haircuts</h2>
+          <div class="gallery-wrap">
+            <div class="gallery">
+              <img class="gallery-image" src="<%= require.ensure('./img/imgA.jpg').default %>" alt="picture of lady having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/imgB.jpg').default %>" alt="picture of lady having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/imgC.jpg').default %>" alt="picture of lady having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/imgD.jpg').default %>" alt="picture of lady having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/imgE.jpg').default %>" alt="picture of lady having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/imgF.jpg').default %>" alt="picture of lady having hair cut">
+            </div>
+          </div>
+          <div class="swipe-icon">Swipe for more</div>
+        </div>
+      </div>
+
+      <div id="opening" class="container">
+        <hr class="container-hr"/>
+        <div class="container-header">
+          <h2 id="opening-title">Opening Times</h2>
+          <table class="opening-times" id="opening-times-table" data-today="5">
+            <thead>
+              <tr>
+                <th scope="row"><span class="sr-only">Period</span></th>
+                <th data-day="1" scope="col">Opens</th>
+                <th data-day="2" scope="col">Closes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mon</th>
+                <td data-day="1" scope="col">Closed</td>
+                <td data-day="1" scope="col">-</td>
+              </tr>
+              <tr>
+                <th scope="row">Tue</th>
+                <td data-day="2" scope="col">10:00</td>
+                <td data-day="2" scope="col">14:45</td>
+              </tr>
+              <tr>
+                <th scope="row">Wed</th>
+                <td data-day="3" scope="col">09:15</td>
+                <td data-day="3" scope="col">17:30</td>
+              </tr>
+              <tr>
+                <th scope="row">Thu</th>
+                <td data-day="4" scope="col">09:15</td>
+                <td data-day="4" scope="col">17:30</td>
+              </tr>
+              <tr>
+                <th scope="row">Fri</th>
+                <td data-day="5" scope="col">09:15</td>
+                <td data-day="5" scope="col">17:30</td>
+              </tr>
+              <tr>
+                <th scope="row">Sat</th>
+                <td data-day="6" scope="col">09:00</td>
+                <td data-day="6" scope="col">16:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Sun</th>
+                <td data-day="7" scope="col">Closed</td>
+                <td data-day="7" scope="col">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer><a href="tel:07713720971">07713&nbsp;720971</a>74 Green Rd, Meanwood, Leeds LS6 4HY</footer>
+  </body>
+</html>

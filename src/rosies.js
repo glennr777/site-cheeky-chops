@@ -1,4 +1,4 @@
-import "./main.css"
+import "./rosies.css";
 
 const toggleMenu = (to) => {
   const navBar = document.getElementById('navBar');

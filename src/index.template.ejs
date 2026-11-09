@@ -26,7 +26,6 @@
   </head>
 
   <body>
-    <div class="gradient"></div>
     <nav id="mainNav">
         <a class="page-scroll booksy" href="http://cheekychops.booksy.com" target="_blank" name="logo">Book Now</a>
         <button id="navButton" type="button" data-toggle="collapse" data-target="#navbar">
@@ -45,16 +44,26 @@
     </nav>
 
     <header id="page-top">
+      <h1 class="sr-only">Cheeky Chops haircutting and Rosies Hairdressing.</h1>
+            
       <div class="header-content">
         <div class="header-content-inner">
-          <h1 class="cheeky"><span class="sr-only">Cheeky Chops!</span></h1>
-          <p class="cloud">Perfect for children who don't like their hair cutting</p>
-          <div id="monkey"></div>
+          <div class="header-content-inner-item">
+            <a href="#main-content" id="cheeky" aria-label="Skip to main content"></a>
+            <p class="cloud" hidden="hidden">Perfect for children who don't like their hair cutting</p>
+            <p class="promo">Haircuts for all the family. Specializing in childrens haircuts</p>
+            <a class="btn-primary" href="#main-content">Visit Cheeky Chops</a>
+          </div>
+          <div class="header-content-inner-item">
+            <a href="/rosies" id="rosies" aria-label="Rosies hairdressing"></a>
+            <p class="promo promo-rosies">A small 1to1 ladies and girls salon</p>
+            <a class="btn-primary btn-primary-rosies" href="/rosies">Visit Rosies Hairdressing</a>
+          </div>
         </div>
       </div>
     </header>
 
-    <aside class="modal" id="booking_notice">
+    <aside class="modal" id="booking_notice" hidden="hidden">
       <div class="inner">
         <h2>Booking advice</h2>
         <p>When making a reservation, please ensure you check and set your stylist (Staff) option to "No preference" as this will help us give you all available booking times. Thanks!</p>
@@ -64,11 +73,11 @@
     <section id="main-content">
       <div id="about" class="container">
         <div class="container-header">
-          <h2 id="about-title">About us</h2>
-          <p>Cheeky chops is a fun place where the children can come for their hair cutting with out it been such a task for the parents we have cars they sit in to have there hair cut, fun feature walls , Ipads and so much more!</p>
-          <p>Bring your children for their hair cutting with a more fun and relaxing experience than the normal salons, perfect for children who are not very keep on their haircutting.</p> 
-          <p>For children children who need extra time and care please book the service called haircut with extra time!</p>
-          <p>We also offer ladies hair and beauty services which allows you to bring your child with you.</p>
+          <h2 id="about-title">Welcome to Cheeky Chops!</h2>
+          <p>We're a children's salon and barbers specialising in children's haircuts, while also offering men's haircuts.</p>
+          <p>With fun ride-on cars, toys to enjoy while waiting, and a Nintendo Switch for older children in our barber area, we make haircuts a positive experience for all ages.</p> 
+          <p>We also offer extra-time appointments for children with SEN, providing a calm, patient and understanding environment.</p>
+          <p>Proudly caring for local families for over 8 years. We can't wait to welcome you! &#10084;</p>
         </div>
       </div>
 
@@ -77,18 +86,24 @@
           <h2 id="gallery-title">Making haircuts more fun and relaxing</h2>
           <div class="gallery-wrap">
             <div class="gallery">
-              <img class="gallery-image" src="<%= require.ensure('./img/img1.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img2.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img3.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img4.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img5.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img6.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img7.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img8.jpg').default %>" alt="picture of child having hair cut">
-              <img class="gallery-image" src="<%= require.ensure('./img/img9.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img10.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img11.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img12.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img13.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img14.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img15.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img16.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img17.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img18.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img19.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img20.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img21.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img22.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img23.jpg').default %>" alt="picture of child having hair cut">
+              <img class="gallery-image" src="<%= require.ensure('./img/img24.jpg').default %>" alt="picture of child having hair cut">
             </div>
           </div>
-          <div class="swipe-icon"></div>
+          <div class="swipe-icon">Swipe for more</div>
         </div>
       </div>
 
@@ -123,8 +138,8 @@
               </tr>
               <tr>
                 <th scope="row">Tue</th>
-                <td data-day="2" scope="col">Closed</td>
-                <td data-day="2" scope="col">-</td>
+                <td data-day="2" scope="col">10:00</td>
+                <td data-day="2" scope="col">14:45</td>
               </tr>
               <tr>
                 <th scope="row">Wed</th>

@@ -5,7 +5,8 @@ const { plugin } = require('postcss');
 
 module.exports = {
   entry: {
-    index: './src/main.js',
+    index: './src/index.js',
+    rosies: './src/rosies.js'
   },
   module: {
     rules: [
@@ -27,7 +28,7 @@ module.exports = {
       {
         test: /\.(jpg|png)$/,
         use: {
-          loader: "url-loader",
+          loader: "file-loader",
           options: {
             limit: 8000, // Convert images < 8kb to base64 strings
             name: 'images/[hash]-[name].[ext]'
@@ -40,20 +41,31 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.template.ejs',
-      inject: 'html',
+      inject: 'body',
       inlineSource: '.(js|css)$',
       filename: 'index.html',
+      chunks: ['index'],
+      scriptLoading : 'defer'
     }),
     new HtmlWebpackPlugin({
-      template: './src/landing.template.ejs',
-      inject: 'html',
+      template: './src/rosies.template.ejs',
+      inject: 'body',
       inlineSource: '.(js|css)$',
-      filename: 'landing.html',
+      filename: 'rosies/index.html',
+      chunks: ['rosies'],
+      scriptLoading : 'defer'
     }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     compress: true,
     port: 3000
   },
+  optimization: {
+    splitChunks: {
+      minChunks: 2,
+    }
+  }
 };

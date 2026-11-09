@@ -10,8 +10,8 @@ var express = require("express"),
     publicDir = process.argv[2] || __dirname + '/dist',
     path = require('path');
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(publicDir, req.path.split('/').pop()));
+app.get("/{*path}", function (req, res) {
+  res.sendFile(path.join(publicDir, req.path));
 });
 
 app.use(methodOverride());
